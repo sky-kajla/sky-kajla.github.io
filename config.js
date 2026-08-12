@@ -23,7 +23,7 @@ const CONFIG = {
     linkedin: "https://www.linkedin.com/in/akash-kajla-84935b331",
     twitter: "#",
     email: "mailto:kajlaakash3@gmail.com",
-    resume: "#"
+    resume: "./Akash_Kajla_Resume.pdf"
   },
 
   // Technical Skills categorized exactly from CV

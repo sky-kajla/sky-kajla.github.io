@@ -5,7 +5,6 @@ const CONFIG = {
 
   // Custom running/demo links for specific GitHub repositories
   repoHomepages: {
-    "Student-Chatbot": "https://sky-kajla.github.io/Student-Chatbot",
     "Portfolio": "https://sky-kajla.github.io",
     "portfolio": "https://sky-kajla.github.io",
     "sky-kajla.github.io": "https://sky-kajla.github.io"

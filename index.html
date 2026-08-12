@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Akash Kajla | Portfolio</title>
+  <meta name="description" content="A premium, responsive developer portfolio showing personal projects and live GitHub repository statistics.">
+  <meta name="author" content="Akash Kajla">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scroll-bar"></div>
+
+  <!-- Background Ambient Glows -->
+  <div class="bg-ambient">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="main-header">
+    <div class="nav-container">
+      <a href="#hero" class="logo" id="logo-link">
+        <span class="logo-bracket">&lt;</span><span id="nav-brand-name">Portfolio</span><span class="logo-bracket"> /&gt;</span>
+      </a>
+      
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+        <i data-lucide="menu"></i>
+      </button>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link active" id="nav-hero">Home</a></li>
+        <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#education" class="nav-link" id="nav-education">Education</a></li>
+        <li><a href="#github" class="nav-link" id="nav-github">GitHub Repos</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge" id="hero-status-badge">
+            <span class="hero-badge-pulse"></span>
+            <span>Available for freelance & contract roles</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <br>
+            <span class="gradient-text" id="hero-name">Alex Morgan</span>
+          </h1>
+          <div class="hero-subtitle">
+            <span id="typed-text"></span><span class="cursor"></span>
+          </div>
+          <p class="hero-desc" id="hero-description">
+            I build responsive, modern web applications with a focus on clean code, seamless user experiences, and micro-interactions.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary" id="hero-contact-btn">
+              Get in Touch <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#github" class="btn btn-secondary" id="hero-github-btn">
+              View Work <i data-lucide="github"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-graphic">
+          <div class="avatar-container">
+            <div class="avatar-border-ring"></div>
+            <div class="avatar-glow-ring"></div>
+            <div class="avatar-img-wrapper" id="avatar-wrapper">
+              <!-- Dynamically populated or displays placeholder -->
+              <i data-lucide="user" class="avatar-placeholder" id="avatar-placeholder-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Skills Section -->
+    <section class="about section reveal" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">A brief overview of who I am, what I do, and the technical skills I bring to the table.</p>
+        
+        <div class="about-journey">
+          <div class="about-text">
+            <h3>My Journey</h3>
+            <p id="about-bio-p1">
+              I am a passionate software developer specializing in building elegant and functional user interfaces.
+            </p>
+            
+            <div class="about-details-grid">
+              <div class="detail-item glass-panel">
+                <div class="detail-icon-box"><i data-lucide="map-pin"></i></div>
+                <div class="detail-content">
+                  <span class="detail-label">Location</span>
+                  <span class="detail-val" id="detail-location">Barasat, West Bengal, India</span>
+                </div>
+              </div>
+              <div class="detail-item glass-panel">
+                <div class="detail-icon-box"><i data-lucide="mail"></i></div>
+                <div class="detail-content">
+                  <span class="detail-label">Email</span>
+                  <span class="detail-val" id="detail-email">kajlaakash3@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-wrapper" style="margin-top: 60px;">
+          <h3>Technical Stack</h3>
+          <div class="skills-category-grid" id="skills-categories-container">
+            <!-- Dynamically populated skill categories -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Hobbies Section -->
+    <section class="education-section section reveal" id="education">
+      <div class="container">
+        <h2 class="section-title">Education & Background</h2>
+        <p class="section-subtitle">Academic milestones, languages spoken, and what I enjoy in my free time.</p>
+        
+        <div class="about-grid">
+          <div class="education-wrapper">
+            <div class="timeline" id="education-timeline-container">
+              <!-- Dynamically populated education timeline -->
+            </div>
+          </div>
+          
+          <div class="lifestyle-wrapper" style="display: grid; grid-template-columns: 1fr; gap: 30px;">
+            <div>
+              <h3>Languages</h3>
+              <div class="skills-grid" id="languages-container">
+                <!-- Dynamically populated languages -->
+              </div>
+            </div>
+            <div>
+              <h3>Hobbies & Interests</h3>
+              <div class="skills-grid" id="hobbies-container">
+                <!-- Dynamically populated hobbies -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Repos Showcase Section -->
+    <section class="github-section section reveal" id="github">
+      <div class="container">
+        <h2 class="section-title">GitHub Showcase</h2>
+        <p class="section-subtitle">Explore live repositories fetched in real-time from the GitHub API. Feel free to load any profile!</p>
+        
+        <!-- Search bar to dynamically load other users -->
+        <div class="github-search-container">
+          <div class="github-search-bar">
+            <i data-lucide="search" style="color: var(--text-muted); margin-left: 12px; align-self: center;"></i>
+            <input type="text" id="github-username-input" placeholder="Search GitHub username...">
+            <button id="github-search-btn">Load Profile</button>
+          </div>
+        </div>
+
+        <!-- Live GitHub Profile Card -->
+        <div class="github-profile-card glass-panel" id="github-profile-card">
+          <img src="" alt="GitHub Avatar" class="gh-card-avatar" id="github-avatar">
+          <div class="gh-card-info">
+            <div class="gh-card-name-row">
+              <h3 class="gh-card-name" id="github-name">GitHub User</h3>
+              <a href="#" target="_blank" class="gh-card-username" id="github-profile-link">@github</a>
+            </div>
+            <p class="gh-card-bio" id="github-bio">Loading GitHub profile information...</p>
+            <div class="gh-card-stats">
+              <div class="gh-stat">
+                <span class="gh-stat-val" id="github-repos-count">0</span>
+                <span class="gh-stat-label">Repositories</span>
+              </div>
+              <div class="gh-stat">
+                <span class="gh-stat-val" id="github-followers-count">0</span>
+                <span class="gh-stat-label">Followers</span>
+              </div>
+              <div class="gh-stat">
+                <span class="gh-stat-val" id="github-following-count">0</span>
+                <span class="gh-stat-label">Following</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repositories Grid -->
+        <div class="projects-grid" id="github-repos-container">
+          <!-- Dynamically populated with GitHub Repository Cards -->
+          <div style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 40px;">
+            <i data-lucide="loader-2" class="spin" style="margin-bottom: 12px; width: 32px; height: 32px; animation: spin-clockwise 2s linear infinite;"></i>
+            <p>Loading projects...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact section reveal" id="contact">
+      <div class="container">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Have a project in mind, a question, or just want to say hello? Drop a message below!</p>
+        
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Get in touch</h3>
+            <p>I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+            
+            <div class="contact-cards-container">
+              <div class="contact-card glass-panel">
+                <div class="contact-card-icon"><i data-lucide="mail"></i></div>
+                <div class="contact-card-content">
+                  <span class="contact-card-label">Email Me</span>
+                  <a href="" class="contact-card-value" id="contact-email-link">alex@example.com</a>
+                </div>
+              </div>
+              
+              <div class="contact-card glass-panel">
+                <div class="contact-card-icon"><i data-lucide="map-pin"></i></div>
+                <div class="contact-card-content">
+                  <span class="contact-card-label">Location</span>
+                  <span class="contact-card-value" id="contact-location-text">San Francisco, CA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form-panel glass-panel">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" name="name" required placeholder="John Doe">
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" name="email" required placeholder="john@example.com">
+              </div>
+              <div class="form-group form-group-full">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" required placeholder="Project Proposal">
+              </div>
+              <div class="form-group form-group-full">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" required placeholder="Write your message here..."></textarea>
+              </div>
+              <div class="form-status" id="form-status-msg"></div>
+              <div class="form-group-full">
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;" id="contact-submit-btn">
+                  Send Message <i data-lucide="send"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="footer-year">2026</span> <span id="footer-owner-name">Alex Morgan</span>. All rights reserved.</p>
+      
+      <div class="footer-socials" id="footer-socials-container">
+        <!-- Dynamically populated footer links -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Logic Scripts -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

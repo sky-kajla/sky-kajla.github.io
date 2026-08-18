@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initBasicInfo();
   initSkills();
   initEducation();
+  initAchievements();
   initLanguages();
   initHobbies();
   initMobileMenu();
@@ -189,6 +190,39 @@ function initEducation() {
     `;
     container.appendChild(item);
   });
+}
+
+/* ==========================================================================
+   Achievements & Certifications Binding
+   ========================================================================== */
+function initAchievements() {
+  const container = document.getElementById("achievements-container");
+  if (!container || !CONFIG.achievements) return;
+
+  container.innerHTML = "";
+  CONFIG.achievements.forEach(ach => {
+    const card = document.createElement("div");
+    card.className = "project-card glass-panel";
+    
+    let iconName = ach.icon || "award";
+    
+    card.innerHTML = `
+      <div class="project-card-header">
+        <div class="project-icon">
+          <i data-lucide="${iconName}"></i>
+        </div>
+        <div class="project-links">
+          <span style="font-size: 0.85rem; color: var(--accent-cyan); font-weight: 600;">${ach.year}</span>
+        </div>
+      </div>
+      <h3 class="project-title" style="font-size: 1.2rem; line-height: 1.4; margin-bottom: 8px;">${ach.title}</h3>
+      <h4 style="font-size: 0.95rem; color: var(--text-secondary); font-weight: 500; margin-bottom: 12px;">${ach.issuer}</h4>
+      <p class="project-description" style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin: 0;">${ach.description}</p>
+    `;
+    container.appendChild(card);
+  });
+  
+  lucide.createIcons();
 }
 
 function initLanguages() {

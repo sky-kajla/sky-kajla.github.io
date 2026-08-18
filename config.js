@@ -66,6 +66,36 @@ const CONFIG = {
       duration: "Passing Year: 2020"
     }
   ],
+  achievements: [
+    {
+      title: "Boeing IIT National Aeromodelling Competition 2025",
+      issuer: "Boeing & IIT Kharagpur",
+      description: "Represented Brainware University and was selected among the Top 30 teams in the East Zone in the prestigious national aeromodelling challenge.",
+      year: "2025",
+      icon: "award"
+    },
+    {
+      title: "Science Mela 2024 (Group Event)",
+      issuer: "Nehru Yuva Kendra & Brainware University NSS",
+      description: "Secured the 3rd position in the Science Mela event organized by Nehru Yuva Kendra, Barasat.",
+      year: "2024",
+      icon: "trophy"
+    },
+    {
+      title: "Database Management Systems Certification",
+      issuer: "NPTEL",
+      description: "Completed professional certification course in Database Management Systems.",
+      year: "2023",
+      icon: "shield"
+    },
+    {
+      title: "Software Engineering Certification",
+      issuer: "Coursera",
+      description: "Successfully completed the Software Engineering course on Coursera.",
+      year: "2023",
+      icon: "file-text"
+    }
+  ],
   languages: ["English", "Bengali", "Hindi"],
   hobbies: ["Read books", "Play outdoor games", "Writing", "Exploring New Technologies"]
 };

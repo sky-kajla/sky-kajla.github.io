@@ -80,20 +80,6 @@ const CONFIG = {
       description: "Secured the 3rd position in the Science Mela event organized by Nehru Yuva Kendra, Barasat.",
       year: "2024",
       icon: "trophy"
-    },
-    {
-      title: "Database Management Systems Certification",
-      issuer: "NPTEL",
-      description: "Completed professional certification course in Database Management Systems.",
-      year: "2023",
-      icon: "shield"
-    },
-    {
-      title: "Software Engineering Certification",
-      issuer: "Coursera",
-      description: "Successfully completed the Software Engineering course on Coursera.",
-      year: "2023",
-      icon: "file-text"
     }
   ],
   languages: ["English", "Bengali", "Hindi"],

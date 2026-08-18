@@ -211,7 +211,8 @@ function initAchievements() {
         <div class="project-icon">
           <i data-lucide="${iconName}"></i>
         </div>
-        <div class="project-links">
+        <div class="project-links" style="align-items: center;">
+          ${ach.link ? `<a href="${ach.link}" target="_blank" class="project-link-btn" aria-label="View Post" style="display: flex; align-items: center; color: var(--text-secondary); transition: var(--transition-fast);"><i data-lucide="external-link" style="width: 18px; height: 18px;"></i></a>` : ''}
           <span style="font-size: 0.85rem; color: var(--accent-cyan); font-weight: 600;">${ach.year}</span>
         </div>
       </div>

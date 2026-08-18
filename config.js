@@ -72,14 +72,16 @@ const CONFIG = {
       issuer: "Boeing & IIT Kharagpur",
       description: "Represented Brainware University and was selected among the Top 30 teams in the East Zone in the prestigious national aeromodelling challenge.",
       year: "2025",
-      icon: "award"
+      icon: "award",
+      link: "https://www.linkedin.com/posts/akash-kajla-84935b331_aeromodelling-boeingcompetition-iitkharagpur-activity-7324152070104657920-7Swl"
     },
     {
       title: "Science Mela 2024 (Group Event)",
       issuer: "Nehru Yuva Kendra & Brainware University NSS",
       description: "Secured the 3rd position in the Science Mela event organized by Nehru Yuva Kendra, Barasat.",
       year: "2024",
-      icon: "trophy"
+      icon: "trophy",
+      link: "https://www.linkedin.com/posts/akash-kajla-84935b331_sciencemela-nehruyuvakendra-brainwareuniversity-activity-7323694063302385665-dd-G"
     }
   ],
   languages: ["English", "Bengali", "Hindi"],

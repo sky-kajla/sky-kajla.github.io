@@ -53,7 +53,7 @@ const CONFIG = {
     {
       institution: "Brainware University",
       degree: "B.Tech in Computer Science & Engineering",
-      duration: "2022 - 2026 (4th Sem SGPA: 8.00)"
+      duration: "2024 - 2028 (4th Sem SGPA: 8.00)"
     },
     {
       institution: "Tarahat Saradamoni High School",
@@ -73,7 +73,7 @@ const CONFIG = {
       description: "Represented Brainware University and was selected among the Top 30 teams in the East Zone in the prestigious national aeromodelling challenge.",
       year: "2025",
       icon: "award",
-      link: "https://www.linkedin.com/posts/akash-kajla-84935b331_aeromodelling-boeingcompetition-iitkharagpur-activity-7324152070104657920-7Swl"
+      link: "https://www.linkedin.com/posts/akash-kajla-84935b331_aeromodelling-boeingcompetition-iitkharagpur-ugcPost-7324152069416747010-33Y9/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFOGF_kBWB46nd0If2SJ-UVv-QkDC9rBwBw"
     },
     {
       title: "Science Mela 2024 (Group Event)",
@@ -81,7 +81,7 @@ const CONFIG = {
       description: "Secured the 3rd position in the Science Mela event organized by Nehru Yuva Kendra, Barasat.",
       year: "2024",
       icon: "trophy",
-      link: "https://www.linkedin.com/posts/akash-kajla-84935b331_sciencemela-nehruyuvakendra-brainwareuniversity-activity-7323694063302385665-dd-G"
+      link: "https://www.linkedin.com/posts/akash-kajla-84935b331_sciencemela-nehruyuvakendra-brainwareuniversity-share-7323694062346153984-oA_S/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFOGF_kBWB46nd0If2SJ-UVv-QkDC9rBwBw"
     }
   ],
   languages: ["English", "Bengali", "Hindi"],

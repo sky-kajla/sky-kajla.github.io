@@ -111,21 +111,29 @@ function bindText(id, text) {
    ========================================================================== */
 function initSkills() {
   const container = document.getElementById("skills-categories-container");
+  const softContainer = document.getElementById("soft-skills-container");
   if (!container || !CONFIG.skills) return;
 
   container.innerHTML = "";
+  if (softContainer) softContainer.innerHTML = "";
   
-  // Group skills by category
+  // Separate technical categories and soft skills
   const categories = {};
+  const softSkills = [];
+
   CONFIG.skills.forEach(skill => {
     const cat = skill.category || "General";
-    if (!categories[cat]) {
-      categories[cat] = [];
+    if (cat.toLowerCase().includes("soft")) {
+      softSkills.push(skill.name);
+    } else {
+      if (!categories[cat]) {
+        categories[cat] = [];
+      }
+      categories[cat].push(skill.name);
     }
-    categories[cat].push(skill.name);
   });
 
-  // Render category cards
+  // Render technical category cards
   Object.entries(categories).forEach(([categoryName, skillNames]) => {
     const card = document.createElement("div");
     card.className = "skills-category-card glass-panel";
@@ -137,7 +145,6 @@ function initSkills() {
     else if (catLower.includes("db") || catLower.includes("data")) iconName = "database";
     else if (catLower.includes("concept")) iconName = "git-commit";
     else if (catLower.includes("tool")) iconName = "tool";
-    else if (catLower.includes("soft") || catLower.includes("skill")) iconName = "users";
 
     const skillsTagsHTML = skillNames.map(name => {
       // Pick dynamic sub-icons for specific skills
@@ -164,6 +171,28 @@ function initSkills() {
     `;
     container.appendChild(card);
   });
+
+  // Render Soft Skills in dedicated container after all technical stack
+  if (softContainer && softSkills.length > 0) {
+    const softSkillIcons = {
+      "communication": "message-square",
+      "problem-solving": "puzzle",
+      "teamwork": "users",
+      "time management": "clock",
+      "adaptability": "refresh-cw",
+      "quick learner": "sparkles"
+    };
+
+    softSkills.forEach(name => {
+      const icon = softSkillIcons[name.toLowerCase()] || "check-circle";
+      const tag = document.createElement("div");
+      tag.className = "skill-tag";
+      tag.style.padding = "8px 16px";
+      tag.style.fontSize = "0.9rem";
+      tag.innerHTML = `<i data-lucide="${icon}" style="width: 16px; height: 16px; color: var(--accent-cyan);"></i> <span>${name}</span>`;
+      softContainer.appendChild(tag);
+    });
+  }
   
   lucide.createIcons();
 }

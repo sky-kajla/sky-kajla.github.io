@@ -66,6 +66,21 @@ function initBasicInfo() {
     emailLink.href = CONFIG.socials.email;
   }
 
+  // Set LinkedIn links dynamically
+  if (CONFIG.socials && CONFIG.socials.linkedin) {
+    const heroLinkedin = document.getElementById("hero-linkedin-btn");
+    if (heroLinkedin) heroLinkedin.href = CONFIG.socials.linkedin;
+
+    const navLinkedin = document.getElementById("nav-linkedin");
+    if (navLinkedin) navLinkedin.href = CONFIG.socials.linkedin;
+
+    const detailLinkedin = document.getElementById("detail-linkedin-link");
+    if (detailLinkedin) detailLinkedin.href = CONFIG.socials.linkedin;
+
+    const contactLinkedin = document.getElementById("contact-linkedin-link");
+    if (contactLinkedin) contactLinkedin.href = CONFIG.socials.linkedin;
+  }
+
   // Setup social links in footer
   const socialsContainer = document.getElementById("footer-socials-container");
   if (socialsContainer) {

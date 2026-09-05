@@ -187,9 +187,7 @@ function initSkills() {
       const icon = softSkillIcons[name.toLowerCase()] || "check-circle";
       const tag = document.createElement("div");
       tag.className = "skill-tag";
-      tag.style.padding = "8px 16px";
-      tag.style.fontSize = "0.9rem";
-      tag.innerHTML = `<i data-lucide="${icon}" style="width: 16px; height: 16px; color: var(--accent-cyan);"></i> <span>${name}</span>`;
+      tag.innerHTML = `<i data-lucide="${icon}" style="width: 14px; height: 14px; color: var(--accent-cyan);"></i> <span>${name}</span>`;
       softContainer.appendChild(tag);
     });
   }

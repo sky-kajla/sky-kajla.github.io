@@ -7,15 +7,14 @@ const CONFIG = {
   repoHomepages: {
     "Portfolio": "https://sky-kajla.github.io",
     "portfolio": "https://sky-kajla.github.io",
-    "sky-kajla.github.io": "https://sky-kajla.github.io",
-    "educonnect": "https://github.com/sky-kajla/educonnect"
+    "sky-kajla.github.io": "https://sky-kajla.github.io"
   },
 
-  // Basic Information from new CV
+  // Basic Information
   name: "AKASH KAJLA",
   title: "Computer Science & Engineering Student",
-  bio: "Motivated and detail-oriented third-year Computer Science and Engineering student at Brainware University with a strong interest in software development and problem-solving. Skilled in Python, C, HTML, and MySQL, with a passion for learning new technologies and building a successful career in software development. A quick learner and effective team player seeking an internship opportunity to apply technical skills, gain practical experience, and contribute to organizational success.",
-  location: "Barasat, North 24 Parganas, West Bengal, 700125",
+  bio: "I am a motivated and detail-oriented third-year Computer Science & Engineering student at Brainware University with a strong interest in software development and problem-solving. Skilled in Java, Python, C, HTML, and MySQL, with a passion for learning new technologies and building a successful career in software development.",
+  location: "Barasat, West Bengal, India",
   avatarUrl: "", // Automatically fetches from GitHub
 
   // Social and Professional Links
@@ -27,79 +26,65 @@ const CONFIG = {
     resume: "./Akash_Kajla_Resume.pdf"
   },
 
-  // Technical Skills & Core Strengths categorized exactly from new CV
+  // Technical Skills categorized exactly from CV
   skills: [
-    { name: "Python", category: "Programming Languages" },
-    { name: "C", category: "Programming Languages" },
-    { name: "HTML", category: "Web Technologies" },
-    { name: "MySQL", category: "Data & Databases" },
-    { name: "Object-Oriented Programming (OOP)", category: "Core Concepts" },
-    { name: "Operating Systems", category: "Core Concepts" },
-    { name: "GitHub", category: "Tools & Professional" },
-    { name: "VS Code", category: "Tools & Professional" },
-    { name: "Excel", category: "Tools & Professional" },
-    { name: "MS Office", category: "Tools & Professional" },
-    { name: "Documentation", category: "Tools & Professional" },
-    { name: "Presentation", category: "Tools & Professional" },
-    { name: "Problem-Solving", category: "Soft Skills" },
-    { name: "Full-Stack Development", category: "Soft Skills" },
+    { name: "Java", category: "Languages" },
+    { name: "HTML", category: "Languages" },
+    { name: "Python", category: "Languages" },
+    { name: "C", category: "Languages" },
+    { name: "MySQL", category: "Database" },
+    { name: "Object-Oriented Programming", category: "Concepts" },
+    { name: "Operating Systems", category: "Concepts" },
+    { name: "VS Code", category: "Tools" },
+    { name: "Git", category: "Tools" },
+    { name: "GitHub", category: "Tools" },
+    { name: "Communication", category: "Soft Skills" },
+    { name: "Problem-solving", category: "Soft Skills" },
     { name: "Teamwork", category: "Soft Skills" },
+    { name: "Time management", category: "Soft Skills" },
     { name: "Adaptability", category: "Soft Skills" },
-    { name: "Quick Learning", category: "Soft Skills" },
-    { name: "Communication", category: "Soft Skills" }
+    { name: "Quick learner", category: "Soft Skills" }
   ],
 
-  // Education details from new CV
+
+
+  // Extra details from CV (Education, Hobbies, Languages) to enrich the portfolio
   education: [
     {
-      institution: "Brainware University, Kolkata, West Bengal",
-      degree: "B.Tech in Computer Science and Engineering (5th Semester)",
-      duration: "2024–2028 (4th Sem SGPA: 8.00)"
+      institution: "Brainware University",
+      degree: "B.Tech in Computer Science & Engineering",
+      duration: "2024 - 2028 (4th Sem SGPA: 8.00)"
     },
     {
       institution: "Tarahat Saradamoni High School",
       degree: "Class XII (Board: WBCHSE)",
-      duration: "2022 - 2024"
+      duration: "Passing Year: 2022"
     },
     {
       institution: "Tarahat Saradamoni High School",
       degree: "Class X (Board: WBBSE)",
-      duration: "Passing Year: 2022"
+      duration: "Passing Year: 2020"
     }
   ],
-
-  // Key Achievements & Certifications from new CV
   achievements: [
-    {
-      title: "Science Mela 2024 (Group Event)",
-      issuer: "Nehru Yuva Kendra & Brainware University NSS",
-      description: "Secured 3rd position in the Science Mela event organized by Nehru Yuva Kendra, Barasat, demonstrating teamwork and technical problem-solving skills.",
-      year: "2024",
-      icon: "trophy",
-      link: "https://www.linkedin.com/posts/akash-kajla-84935b331_sciencemela-nehruyuvakendra-brainwareuniversity-share-7323694062346153984-oA_S/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFOGF_kBWB46nd0If2SJ-UVv-QkDC9rBwBw"
-    },
     {
       title: "Boeing IIT National Aeromodelling Competition 2025",
       issuer: "Boeing & IIT Kharagpur",
-      description: "Represented Brainware University and was selected among the Top 30 teams in the East Zone in the national-level aeromodelling competition.",
+      description: "Represented Brainware University and was selected among the Top 30 teams in the East Zone in the prestigious national aeromodelling challenge.",
       year: "2025",
       icon: "award",
       link: "https://www.linkedin.com/posts/akash-kajla-84935b331_aeromodelling-boeingcompetition-iitkharagpur-ugcPost-7324152069416747010-33Y9/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFOGF_kBWB46nd0If2SJ-UVv-QkDC9rBwBw"
     },
     {
-      title: "Diploma in Computer Application (DCA) – Grade A",
-      issuer: "National Computer Institute",
-      description: "Completed a Diploma in Computer Application covering Computer Fundamentals & Windows, MS Office, Networking Concepts & Internet, and HTML, achieving Grade A.",
-      year: "2022",
-      icon: "file-badge"
+      title: "Science Mela 2024 (Group Event)",
+      issuer: "Nehru Yuva Kendra & Brainware University NSS",
+      description: "Secured the 3rd position in the Science Mela event organized by Nehru Yuva Kendra, Barasat.",
+      year: "2024",
+      icon: "trophy",
+      link: "https://www.linkedin.com/posts/akash-kajla-84935b331_sciencemela-nehruyuvakendra-brainwareuniversity-share-7323694062346153984-oA_S/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFOGF_kBWB46nd0If2SJ-UVv-QkDC9rBwBw"
     }
   ],
-
-  languages: [
-    "English (Professional Proficiency)",
-    "Hindi (Conversational Proficiency)",
-    "Bengali (Native Proficiency)"
-  ],
+  languages: ["English", "Bengali", "Hindi"],
   hobbies: ["Read books", "Play outdoor games", "Writing", "Exploring New Technologies"]
 };
 

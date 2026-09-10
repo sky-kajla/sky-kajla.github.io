@@ -177,26 +177,20 @@ function initSkills() {
     let iconName = "code";
     const catLower = categoryName.toLowerCase();
     if (catLower.includes("lang")) iconName = "braces";
-    else if (catLower.includes("web")) iconName = "globe";
     else if (catLower.includes("db") || catLower.includes("data")) iconName = "database";
     else if (catLower.includes("concept")) iconName = "git-commit";
-    else if (catLower.includes("tool") || catLower.includes("prof")) iconName = "tool";
+    else if (catLower.includes("tool")) iconName = "tool";
 
     const skillsTagsHTML = skillNames.map(name => {
       // Pick dynamic sub-icons for specific skills
       let itemIcon = "chevron-right";
       const nameLower = name.toLowerCase();
-      if (nameLower.includes("python")) itemIcon = "terminal";
-      else if (nameLower === "c") itemIcon = "code";
+      if (nameLower.includes("java")) itemIcon = "terminal";
+      else if (nameLower.includes("python")) itemIcon = "terminal";
       else if (nameLower.includes("html") || nameLower.includes("css")) itemIcon = "layout";
       else if (nameLower.includes("github")) itemIcon = "github";
       else if (nameLower.includes("git")) itemIcon = "git-branch";
-      else if (nameLower.includes("vs code") || nameLower.includes("vscode")) itemIcon = "code-2";
-      else if (nameLower.includes("mysql") || nameLower.includes("sql")) itemIcon = "database";
-      else if (nameLower.includes("excel")) itemIcon = "table";
-      else if (nameLower.includes("office")) itemIcon = "file-text";
-      else if (nameLower.includes("document")) itemIcon = "file-edit";
-      else if (nameLower.includes("present")) itemIcon = "presentation";
+      else if (nameLower.includes("code")) itemIcon = "code";
       
       return `<div class="skill-tag"><i data-lucide="${itemIcon}" style="width: 14px; height: 14px;"></i> <span>${name}</span></div>`;
     }).join("");
@@ -218,11 +212,9 @@ function initSkills() {
     const softSkillIcons = {
       "communication": "message-square",
       "problem-solving": "puzzle",
-      "full-stack development": "layers",
       "teamwork": "users",
       "time management": "clock",
       "adaptability": "refresh-cw",
-      "quick learning": "sparkles",
       "quick learner": "sparkles"
     };
 
